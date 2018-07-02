@@ -1,6 +1,6 @@
-from nltk import 
+from nltk import sent_tokenize, word_tokenize
 
-nltk.download()
+#nltk.download()
 
 #tokenizers
 
@@ -12,5 +12,6 @@ nltk.download()
 #lexicon - word and their mean (dictionary)
 #words with dual meaning depending on the sentence
 
-
+example_text = "The sky was tuned to the color of the dead televison"
+print(sent_toxenizer(example_text))
 
