@@ -13,5 +13,5 @@ from nltk import sent_tokenize, word_tokenize
 #words with dual meaning depending on the sentence
 
 example_text = "The sky was tuned to the color of the dead televison"
-print(sent_toxenizer(example_text))
+print(sent_toxenize(example_text))
 
