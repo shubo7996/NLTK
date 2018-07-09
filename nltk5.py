@@ -55,11 +55,12 @@ def process_content():
             words = nltk.word_tokenize(i)
             tagged = nltk.pos_tag(words)
             
-            chunkGram = r"""Chunk: {<RB.?>*<VB.?>*<NNP>+<NN>?}"""
+            chunkGram = r"""Chunk: {<RB.?>*<DT.?>*<NNP>+<NN>?}"""
             chunkParser = nltk.RegexpParser(chunkGram)
             chunked = chunkParser.parse(tagged)
 
             print(chunked)
+            chunked.draw()
 
 
     except Exception as e:
