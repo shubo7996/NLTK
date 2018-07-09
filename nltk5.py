@@ -1,4 +1,4 @@
-from nltk
+import  nltk
 from nltk.corus import state_union
 from nltk.tokenize import PunktSentenceTokenizer
 
