@@ -60,8 +60,12 @@ def process_content():
             chunked = chunkParser.parse(tagged)
 
             print(chunked)
-            chunked.draw()
+            
 
+            for subtree in chunked.subtrees(filter = lambda t: t.label == 'chunk'):
+                print (subtree)
+                
+            chunked.draw()
 
     except Exception as e:
         print (str(e))
